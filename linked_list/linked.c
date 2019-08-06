@@ -14,19 +14,21 @@ LinkedList* new_linked_list(){
 
  void push_list(LinkedList* list, int value){
      Node* n;
-
      n=(Node*)malloc(sizeof(Node)); //intializing new node
-  
+    
      n->value=value; //setting value of new node
 
      if(!list->tail){
-         //It means we are pushing our first node, so intially header and tail node will be same
+         //It means we are pushing our first node,
+         // so intially header and tail node will be same
          list->head=n;
          list->tail=n;   
      }
 
-      list->tail->next=n; //As tail points to the last element of the list, we will set new node as next element of tail element 
+         //As tail points to the last element of the list,
+         // we will set new node as next element of tail element 
      
+      list->tail->next=n; 
       list->tail=n; //As from the above statement n is our new tail, we set new node as tail of list
       
 
@@ -73,7 +75,7 @@ void delete_list(LinkedList* list){
      * Ends whenever we reach at the tail
      * We go to next node in each iteration
      */
-    for(i=list->head;i!=list->tail;i=i->next){ //Traversing Linked List
+    for(i=list->head;i;i=i->next){ //Traversing Linked List
         free(i); //Deallocatind memory of i'th node
     }
 
@@ -82,3 +84,4 @@ void delete_list(LinkedList* list){
 
 }
     
+

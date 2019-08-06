@@ -9,7 +9,7 @@ void printList(LinkedList* list){
 }
 
 
-void main(){
+void Main(){
 
     
     LinkedList* list;
