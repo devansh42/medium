@@ -8,11 +8,14 @@
      push_basic_stack(s,12);
      push_basic_stack(s,13);
      push_basic_stack(s,14);
+     printf("\nPrinting Top\t%d\n",top_basic_stack(s)); 
+
     int x;
      for(;x=pop_basic_stack(s);){
          
          printf("\t%d",x);
      
      }
+
      delete_basic_stack(s);
  }

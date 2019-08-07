@@ -34,9 +34,15 @@
     int pop_basic_stack(BasicStack*);
 
     /**
+     * This function return top element of our stack without removing it
+     */
+    int top_basic_stack(BasicStack*);
+
+
+    /**
      * This function deletes, basic stack structure and deallocates memory associated with them
      */
-    void delete_basic_stack(BasicStack*);
+        void delete_basic_stack(BasicStack*);
 
 
 

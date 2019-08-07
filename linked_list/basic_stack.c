@@ -48,3 +48,8 @@ void delete_basic_stack(BasicStack* s){
     //Freeing memory associated with BasicStack struct
     free(s);
 }
+
+  int top_basic_stack(BasicStack* s){
+      //It doesn't worth to explain
+      return (s->size>0)?*(s->ar+s->size-1):-1;
+    }
